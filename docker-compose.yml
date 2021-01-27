@@ -1,0 +1,40 @@
+version: "3.9"
+services:
+  go-webapp:
+    build:
+      context: infra/go-webapp
+    image: go-webapp
+    deploy:
+      mode: replicated
+      replicas: 3
+      labels:
+        com.epidemicsound.com: "Web App"
+    cap_drop:
+      - all
+    networks:
+      - webapp
+  nginx:
+    image: nginx:1.18.0-alpine
+    container_name: nginx
+    labels:
+      com.epidemicsound.com: "Web Server"
+    restart: always
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./infra/nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - go-webapp
+    cap_drop:
+      - all
+    cap_add:
+      - chown
+      - dac_override
+      - setgid
+      - setuid
+      - net_bind_service
+    networks:
+      - webapp
+networks:
+  webapp:
