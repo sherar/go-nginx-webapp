@@ -113,4 +113,3 @@ Project Link: [https://github.com/sherar/go-nginx-webapp](https://github.com/she
 [license-url]: https://github.com/sherar/go-nginx-webapp/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/gerardo-prieto/
-[product-screenshot]: images/screenshot.png
