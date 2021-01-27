@@ -24,7 +24,7 @@ docker-compose up --scale go-webapp=3
 ```
 _Where `go-webapp=3` is the amount of instances for the Go webapp_
 
-> Then open `http://localhost`
+Then open `http://localhost`
 
 ## Security Measures
 
@@ -41,20 +41,24 @@ Here are some recommendations for both Dockerfile and Go application.
 
 #### Dockerfile
 
-Use Hadolint. This will output issues if there are any.
+Use [Hadolint](https://github.com/hadolint/hadolint)
+This will output issues if there are any.
+
 ```
 docker run --rm -i hadolint/hadolint < Dockerfile
 ```
 
 #### Go application
 
-Using SonarQube. For this purpose, we can spin up a docker container and analyze the code.
+Using [SonarQube](https://github.com/SonarSource/sonarqube/) 
+
+For this purpose, we can spin up a docker container and analyze the code.
 
 ```
 docker run -d --name sonarqube -p 9000:9000 sonarqube
 ```
 
-Also using linters and code coverage would be great
+Also using linters and code coverage would be great.
 
 
 ## Code Review Guidelines
