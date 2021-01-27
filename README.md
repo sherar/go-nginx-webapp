@@ -71,10 +71,11 @@ Also using linters and code coverage would be great.
 - If a comment is not enough or there are different opinions, have a chat/meeting in order to have better communication.
 - Use `Conventional Commits` [https://www.conventionalcommits.org/en/v1.0.0/](https://www.conventionalcommits.org/en/v1.0.0/)
 
-> Goals of Code Review:
->- Improve code quality
->- Reduce number of potential bugs
->- Learn and get better at coding
+#### Goals of Code Review:
+
+- Improve code quality
+- Reduce number of potential bugs
+- Learn and get better at coding
 
 #### Next steps:
 - Use `linters`, `code coverage tools`, `static code analysis`, `static security tools` in a CI/CD pipeline as well as in your workstation (git hooks). This will improve the quality, experience and reduce human code review times 
