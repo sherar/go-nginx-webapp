@@ -65,6 +65,7 @@ Also using linters and code coverage would be great
 - A PR should be reviewed and approved before merging back to master.
 - Constructive Feedback is welcomed. If you think the code meets the quality createria, great. Otherwise, provide comments with feedback and perhaps some ideas that could make the code look better, so it can be taken to next level of quality.
 - If a comment is not enough or there are different opinions, have a chat/meeting in order to have better communication.
+- Use `Semantic Commit Messages` [https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)
 
 > Goals of Code Review:
 >- Improve code quality
@@ -95,8 +96,6 @@ Gerardo Prieto - [@sherarr](https://twitter.com/sherarr)
 Project Link: [https://github.com/sherar/go-nginx-webapp](https://github.com/sherar/go-nginx-webapp)
 
 
-
-<!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/sherar/go-nginx-webapp.svg?style=for-the-badge
 [contributors-url]: https://github.com/sherar/go-nginx-webapp/graphs/contributors
