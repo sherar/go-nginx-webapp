@@ -21,7 +21,7 @@ Ports `80` and `443` shoudl be availabe in your localhost or machine where you r
 ```
 docker-compose up --scale go-webapp=3
 ```
-_Where `go-webapp=3` is the amount of instances for the Go webapp_
+_For scalability, update `go-webapp=3` to scale up or down the amount of instances of the Go webapp_
 
 Then open `http://localhost`
 
