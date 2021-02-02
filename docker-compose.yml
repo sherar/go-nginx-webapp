@@ -7,6 +7,10 @@ services:
     deploy:
       mode: replicated
       replicas: 3
+      resources:
+        limits:
+          cpus: "1"
+          memory: 50M
       labels:
         com.epidemicsound.com: "Web App"
     cap_drop:

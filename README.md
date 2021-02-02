@@ -33,6 +33,13 @@ Then open `http://localhost`
 - `nginx-alpine` image is used from a trusted repository
 - Only necessary ports are exposed or open
 - Used fixed versions rather than "latest" for Docker images
+- Set resource limits for containers
+
+## Nice security measures to have
+
+- Use your own registry
+- Verify image integrity with Docker Content Trust (`export DOCKER_CONTENT_TRUST=1`)
+- Make sure no sensitive information is leaked 
 
 ## Static code analysis
 
