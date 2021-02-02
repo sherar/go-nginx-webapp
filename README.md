@@ -14,7 +14,7 @@ Simple solution that runs a Hello World Go application along with NGINX and enab
 
 ### Prerequisites
 
-Ports `80` and `443` should be availabe in your localhost or machine where you run this code.
+Ports `80` should be availabe in your localhost or machine where you run this code.
 
 ## Usage
 
